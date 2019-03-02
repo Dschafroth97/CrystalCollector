@@ -13,6 +13,8 @@ function resetGame(){
         "assets/images/redCrystal.jpg",
     
     ];
+
+    $("#scoreDisplayBox").empty();
     
     scoreDisplay = 0;
 
