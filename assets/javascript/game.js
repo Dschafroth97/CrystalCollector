@@ -1,15 +1,16 @@
+// GLOBAL VARIABLES
 var wins = 0;
 var loss = 0;
 var random_Num;
 var scoreDisplay = 0;
 
 //  wrapped entire number generator in function to make new randomNum and crystal values 
-//  when called in later conditionals
+//  when called in resetGame
 function resetGame(){
     var images = [
-        "assets/images/blueCrystal.png",
+        "assets/images/blueCrystal.jpg",
         "assets/images/greenCrystal.jpg",
-        "assets/images/orangeCrystal.jpg",
+        "assets/images/orangeCrystal.png",
         "assets/images/redCrystal.jpg",
     
     ];
@@ -40,7 +41,6 @@ function resetGame(){
             crystals.css({
                 "background-image":"url('" + images[i] + "')",
                 "background-size":"cover",
-                "max-width":"100%",
             })
         $("#crystalsEmpty").append(crystals);
     }
@@ -57,12 +57,14 @@ $(document).on("click", ".crystals", function() {
     // when clicking crystal, add to scoreDisplay ..
     $("#scoreDisplayBox").html(scoreDisplay);
 
-    // when scoreDisplay === randomNum increment wins, otherwise increment losses
+    // when scoreDisplay == randomNum increment wins, otherwise increment losses
     if(scoreDisplay == random_Num){
         
         wins++;
 
         $("#wins").html("Wins: " + wins);
+
+        alert("You Win!")
 
         resetGame();
     }
@@ -71,6 +73,8 @@ $(document).on("click", ".crystals", function() {
         loss++;
 
         $("#losses").html("Losses: " + loss);
+
+        alert("You Lose!")
 
         resetGame();
     }
