@@ -31,17 +31,24 @@ h1{
     font-weight:bold;
 }
 
-p{
+.instructionText{
     color: #5AB760;
     font-weight: bold;
     margin-bottom: 10px;
     font-size: 20px;
+}
+
+#wins, #losses{
+    font-size: 20px;
+    color: white;
 }
 #parentBox{
     margin: 10px 10px 10px 10px;
 }
 
 #randomNum{
+    font-size: 65px;
+    color: white;
     height: 150px;
     width: 250px;
     background-color: #52D089;
@@ -70,4 +77,16 @@ p{
     color:white;
     background-color: #02BAA8;
     margin: 10px 10px 10px 10px;
+}
+#crystalsEmpty{
+    clear:both;
+    margin: 10px 10px 10px 10px;
+}
+
+.crystals{
+    margin: 10px 0px 10px 5px;
+    border: 1px solid red;
+    height: 125px;
+    width: 100px;
+    float: left;
 }

@@ -4,6 +4,7 @@
     <title>Crystals Collector</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body background="assets/images/crystalImage.jpg">
@@ -15,11 +16,11 @@
 
     <br>
     <div id="instructions">
-        <p>You will be given a random number a the start of the game.</p>
-        <p>There are four crystals below. By clicking on a crystal you will ad a specific amount of points to your total score.</p>
-        <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
-        <p>The value of each crystal is hidden from you until you click on it.</p>
-        <p>Each time when the game starts, the game will change the value of each crystal.</p>
+        <p class="instructionText">You will be given a random number a the start of the game.</p>
+        <p class="instructionText">There are four crystals below. By clicking on a crystal you will ad a specific amount of points to your total score.</p>
+        <p class="instructionText">You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+        <p class="instructionText">The value of each crystal is hidden from you until you click on it.</p>
+        <p class="instructionText">Each time when the game starts, the game will change the value of each crystal.</p>
     </div>
 
     <div id="parentBox">
@@ -27,6 +28,10 @@
 
         </div>
         <div id="winsLosses">
+
+            <p id="wins">Wins: </p>
+            <p id="losses">Losses: </p>
+
 
         </div>
     </div>
@@ -43,5 +48,7 @@
     <div id="scoreDisplay">
     
     </div>
+
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>
